@@ -1,0 +1,23 @@
+h1 {
+    color: #EAE0CF;
+    text-align: center;
+    font-family: Sans-Serif;
+}
+
+p {
+  color: #EAE0CF;
+  text-align: justify;
+}
+
+body {
+  background-color: #7288AE;
+}
+
+#foto-profil {
+  position: relative;
+  top: 10px;
+  left: 135px;
+  width: 84px;
+  border-radius: 100%;
+  overflow: hidden;
+}
