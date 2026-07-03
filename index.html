@@ -1,29 +1,151 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raafi - Portofolio</title>
+    <title>About Me</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <h1>Hello, Everyone.</h1>
-    <div id="foto-profil">
-      <img src="assets/img/manukireng.png" width=85>
-    </div>
-    <div class="box">
-      <div class="title-box">
-        ! Main Info
+    <link rel="stylesheet" href="asetcuy/gaya/eksperimen.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="note-box">
+        NOTE: This simple-looking portofolio page is still under development, so unexpected things may happen. Wait for more!
       </div>
-        <p class="title">Hello! My name is Raafi Dimas Saputra (15y/o), oftenly called "Ryuú" by my online friends. I graduated from SMP Negeri 3 Kalibagor (Spenthreeka), and currently I'm plunging into the world of IT, still in progress of studying and trying to do better.</p>
-    </div>
-    
-    <div class="warning-box">
-      <p class="title">NOTE: This simple-looking portofolio page is still under development. Wait for more!</p>
-    </div>
-</body>
+      
+      <h1>Welcome, Everyone!</h1>
+      
+      <div class="avatar-container">
+        <img src="asetcuy/fotonya/Prof-pic.png" alt="Profile" class="avatar-img" id="profileBtn" title="Click!">
+
+        <div class="profile-info-text" id="profileInfo">
+          <h2>Raafi / Ryuú</h2>
+          <p>Born in 27th December 2010 at 11.00PM,</p>
+          <p>(Monday) Capricorn.</p>
+        </div>
+      </div>
+      
+      <fieldset class="info-box">
+        <legend>Main Info:</legend>
+        <p>Hello! My name is Raafi Dimas Saputra (15y/o), oftenly called "Ryuú" by my online friends and called "Raafi" by my real life friends. I graduated from SMP Negeri 3 Kalibagor (Spenthreeka), and currently I'm plunging into the world of IT, still in progress of studying and trying to do better. I hope I can succeed not only by using logic, but also the drive of my imagination that continues to run, even though I have buried my desire to go to school as a designer.</p>
+      </fieldset>
+      
+      <fieldset class="info-box">
+        <legend>Quote:</legend>
+        <p>If you can't look good, at least you have to have a good heart.</p>
+      </fieldset>
+
+      <div class="hobby-section">
+        <h3 class="hobby-title">Hobby:</h3>
+
+        <ul class="hobby-list">
+          <li>
+            <span class="circle orange"></span>
+            <span class="hobby-text">Listening Music</span>
+          </li>
+          <li>
+            <span class="circle purple"></span>
+            <span class="hobby-text">Playing Games</span>
+          </li>
+          <li>
+            <span class="circle red"></span>
+            <span class="hobby-text">Drawing/Designing</span>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="more-divider">
+        <hr>
+        <span>MORE :</span>
+        <hr>
+      </div>
+
+      <fieldset class="school-box">
+        <legend>Previous School:</legend>
+
+        <div class="school-image-container">
+          <img src="asetcuy/fotonya/spenthreeka-image.png" class="school-img" alt="SMP Negeri 3 Kalibagor">
+        </div>
+
+        <ul class="school-desc-list">
+          <li>SMP Negeri 3 Kalibagor is a public junior middle school located on Jalan Kalianja (usually called SMP Petir), Village of Petir, Kalibagor District, Banyumas Regency, Central Java. The school is known for its spacious learning environment and for meeting national education standards with the highest accreditation rating. (Accreditation: A)</li>
+        </ul>
+      </fieldset>
+
+      <div class="school-buttons">
+              <a href="https://smpn3kalibagor.sch.id" target="_blank" class="visit-btn">
+        &gt; Visit School Web
+      </a>
+      <button class="stats-btn" id="openStatsBtn">My Statistics</button>
+      </div>
+
+      <fieldset class="current-school-box">
+        <legend>Current School:</legend>
+
+        <div class="school-image-container">
+          <img src="asetcuy/fotonya/wika-image.png" class="school-img" alt="SMK Widya Karya Purwokerto">
+        </div>
+
+        <ul class="school-desc-list">
+          <li>SMK Widya Karya Purwokerto is a private vocational high school located in East Purwokerto, Banyumas Regency, Central Java. The school has a long history, originating in 1968 as an SPMA (Sekolah Pertanian Menengah Atas) before transforming into a technical high school (STM) in 1990 and eventually becoming an SMK, the status it holds today. (Accreditation: B)</li>
+        </ul>
+      </fieldset>
+
+      <a href="https://smkwikapwt.sch.id" target="_blank" class="visit-btn smk-btn">
+        &gt; Visit School Web
+      </a>
+      
+      <div class="stats-overlay" id="statsModal">
+        <fieldset class="stats-box">
+          <legend class="stats-box-title">My Statistics:</legend>
+
+          <div class="stats-logo-container">
+            <img src="asetcuy/fotonya/spenthreeka-logo.png" class="stats-logo" alt="SPENTHREEKA">
+            <h2 class="stats-school-name">I gained:</h2>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stats-col">
+              <p><strong>Class:</strong> VII-F, VIII-F, IX-F</p>
+              <p><strong>Friends:</strong> <span class="txt-green">+118</span></p>
+              <p class="sub-txt">Inside school: 115</p>
+              <p class="sub-txt">Outside school: 3</p>
+              <p><strong>Extracurricular:</strong></p>
+              <p class="txt-red">Karate</p>
+              <p class="txt-red">Bilingual English</p>
+              <p class="txt-muted">(Quitted)</p>
+            </div>
+
+            <div class="stats-col">
+              <p><strong>Organization joined:</strong></p>
+              <p class="txt-green">OSIS</p>
+              <p><strong>The least money ever:</strong></p>
+              <p class="txt-red">Rp. 2.000</p>
+              <p><strong>Daily pocket money:</strong></p>
+              <p class="txt-green">Rp. 5.000</p>
+              <p><strong>Most money ever:</strong></p>
+              <p class="txt-green">Rp. 27.000</p>
+            </div>
+
+            <div class="stats-col">
+              <p><strong>Exam grade gained:</strong></p>
+              <p>Highest ever: <span class="txt-green">100</span> Informatics</p>
+              <p>Lowest ever: <span class="txt-red">50</span> Science</p>
+              <p><strong>Fav subject:</strong></p>
+              <p class="txt-green">Informatics</p>
+              <p class="txt-green">English</p>
+              <p><strong>Hated subject:</strong></p>
+              <p class="txt-red">Math</p>
+            </div>
+          </div>
+
+          <button class="stats-close-btn" id="closeStatsBtn">Close</button>
+        </fieldset>
+      </div>
+
+      <script src="asetcuy/gaya/main.js"></script>
+  </body>
 </html>
