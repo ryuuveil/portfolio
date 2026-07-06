@@ -443,14 +443,91 @@ legend.stats-box-title {
 }
 
 @media (max-width: 768px) {
+  .avatar-container {
+    max-width: 100% !important;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .avatar-img {
+    width: 90px !important;
+    height: 90px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .avatar-container.active {
+    gap: 15px !important;
+  }
+
+  .avatar-container.active .profile-info-text {
+    max-width: 220px !important;
+    white-space: normal !important;
+    transform: translateX(0) translateY(-10px) scale(1) !important;
+  }
+
+  .profile-info-text h2 {
+    font-size: 1.2rem !important;
+    margin: 0 0 4px 0 !important;
+  }
+
+  .profile-info-text p {
+    font-size: 0.8rem !important;
+    margin: 0 !important;
+  }
+
   fieldset.stats-box {
-    width: 90% !important;
-    padding: 15px 20px;
+    width: 92% !important;
+    max-width: 360px !important;
+    padding: 10px 15px 15px 15px !important;
+    border-radius: 20px !important;
+    max-height: 85vh !important;
+    overflow-y: auto !important;
+  }
+
+  .stats-logo {
+    width: 120px !important;
+    height: 120px !important;
+    margin-bottom: 5px !important;
+  }
+
+  .stats-school-name {
+    font-size: 0.9rem !important;
+    margin-top: 0 !important;
   }
 
   .stats-grid {
     flex-direction: column !important;
     gap: 15px !important;
+    font-size: 0.78rem !important;
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .stats-col {
+    min-width: 0 !important;
+    width: 100%;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+  }
+
+  .stats-col:last-child {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+  }
+
+  .stats-col p {
+    margin: 2px 0 !important;
+  }
+
+  .sub-txt {
+    font-size: 0.75rem !important;
+  }
+
+  .stats-close-btn {
+    padding: 8px 30px !important;
+    font-size: 0.85rem !important;
+    margin-top: 8px !important;
+    width: auto !important;
   }
 }
 
